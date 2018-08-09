@@ -18,6 +18,12 @@
 	</dependencies>
 	
  <distributionManagement>
+	 
+	  <repository>
+            <id>release</id>
+	    <name>Release</name>				
+            <url>http://18.191.186.74:8081/nexus/content/repositories/releases</url>
+        </repository>
        
         <snapshotRepository>
             <id>snapshots</id>
