@@ -21,13 +21,15 @@
 	 
 	  <repository>
             <id>release</id>
-	    <name>Release</name>				
+	    <name>Release</name>
+            <enabled>false</enabled>		  
             <url>http://18.191.186.74:8081/nexus/content/repositories/releases</url>
         </repository>
        
         <snapshotRepository>
             <id>snapshots</id>
-	    <name>Snapshots</name>	
+	    <name>Snapshots</name>
+	    <enabled>true</enabled>	
             <url>http://18.191.186.74:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
