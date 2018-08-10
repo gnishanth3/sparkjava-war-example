@@ -16,23 +16,32 @@
 			<version>2.3</version>
 		</dependency>
 	</dependencies>
+	<distributionManagment>
+
+	<repositories>
+	<repository>
+	 <release>
+	 <enabled>true</enabled>
+		</release>		 
+	  <id>releases</id>
+	  <name>Releases</name>
+	  <url>http://18.191.186.74:8081/nexus/content/repositories/releases</url>
+	</repository>
 	
- <distributionManagement>
-	 
-	  <repository>
-           <uniqueVersion>false</uniqueVersion>		  
-            <id>release</id>
-	    <name>Release</name>		  
-            <url>http://18.191.186.74:8081/nexus/content/repositories/releases</url>
-        </repository>
-       
-        <snapshotRepository>
-	   <uniqueVersion>true</uniqueVersion>	
-            <id>snapshots</id>
-	    <name>Snapshots</name>	
-            <url>http://18.191.186.74:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <repository>
+	<snapshots>
+	<enabled>true</enabled>
+	    </snapshots>
+
+		<id>snapshots</id>
+		<name>Snapshots</name>
+		<url>http://18.191.186.74:8081/nexus/content/repositories/snapshots</url>
+
+    </repository>
+    </repositories>
+
+ </distributionManagment>	
+
 
 	<build>
 		<plugins>
